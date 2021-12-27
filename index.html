@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="App.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="App">
+      <div class="block input-block">
+        <label for="input" class="label-input">Name/Value Pair</label>
+        <div class="add-wrapper">
+          <input type="text" name="input" class="input" />
+          <button class="btn btn-add-pair">Add</button>
+        </div>
+      </div>
+      <div class="block display-block">
+        <label for="list" class="label-list">Name/Value Pair List</label>
+        <div class="data">
+          <div class="list-field">
+            <ul class="list"></ul>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-action btn-action-sort-name">
+              Sort by Name
+            </button>
+            <button class="btn btn-action btn-action-sort-value">
+              Sort by Value
+            </button>
+            <button class="btn btn-action">Delete</button>
+            <button class="btn btn-action">Show XML</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="App.js"></script>
+  </body>
+</html>

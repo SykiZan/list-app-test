@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+  padding-top: 5%;
+  background-color: #6aa975;
+}
+
+.add-wrapper {
+  height: 60%;
+  display: flex;
+}
+
+label {
+  color: #000;
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+
+.label-input {
+  display: block;
+}
+.input {
+  width: 70%;
+  height: 100%;
+  font-size: 3vh;
+}
+
+.block {
+  width: 40%;
+}
+.input-block {
+  height: 10%;
+}
+
+.btn {
+  background-color: #84dd63;
+  border: none;
+  border-radius: 10%;
+  font-size: 2.5vh;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #335a24;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-add-pair {
+  margin-left: 5%;
+  height: 100%;
+  padding: 5px 25px;
+  width: 20%;
+}
+
+.display-block {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.label-list {
+  width: 100%;
+}
+.data {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+
+.list-field {
+  width: 70%;
+  font-size: 3vh;
+  background-color: #fff;
+}
+
+.list {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  margin-left: 5%;
+}
+
+.btn-action {
+  height: 10%;
+
+  white-space: nowrap;
+}
