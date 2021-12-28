@@ -82,6 +82,7 @@ label {
   width: 70%;
   font-size: 3vh;
   background-color: #fff;
+  z-index: 9999;
 }
 
 .list {
@@ -100,4 +101,9 @@ label {
   height: 10%;
 
   white-space: nowrap;
+}
+
+.selected {
+  background-color: rgba(67, 67, 214, 0.685);
+  color: #fff;
 }
