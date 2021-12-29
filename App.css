@@ -82,12 +82,16 @@ label {
   width: 70%;
   font-size: 3vh;
   background-color: #fff;
-  z-index: 9999;
+  /* z-index: 9999; */
 }
 
 .list {
   list-style: none;
   padding-left: 5px;
+}
+
+.item {
+  cursor: pointer;
 }
 
 .buttons {
@@ -106,4 +110,34 @@ label {
 .selected {
   background-color: rgba(67, 67, 214, 0.685);
   color: #fff;
+}
+
+.modal {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  background-color: #fff;
+  border: 10px solid #335a24;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+.close {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 40px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.xml {
+  overflow: scroll;
 }

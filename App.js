@@ -9,6 +9,11 @@ const btnAdd = document.querySelector(".btn-add-pair");
 const btnSortName = document.querySelector(".btn-action-sort-name");
 const btnSortValue = document.querySelector(".btn-action-sort-value");
 const btnDelete = document.querySelector(".btn-action-delete");
+const btnXml = document.querySelector(".btn-action-xml");
+
+const modal = document.querySelector(".modal");
+const close = document.querySelector(".close");
+const xml = document.querySelector(".xml");
 
 let listArr = [];
 const arrToDeleteId = [];
@@ -210,3 +215,25 @@ const addPosToDelete = () => {
     }
   }
 };
+
+btnXml.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+  //showing element dom representation inside modal
+  for (let i = 0; i < list.children.length; i++) {
+    let p = document.createElement("p");
+    p.textContent = list.children[i].outerHTML;
+    modal.append(p);
+  }
+});
+
+//close button (cross) on the modal
+close.addEventListener("click", () => {
+  modal.classList.add("hidden"); //make modal visible
+
+  //clear nodes representation array so they correspond to the current state of the page
+  let paragraphs = document.getElementsByTagName("p");
+
+  for (let i = paragraphs.length - 1; i >= 0; --i) {
+    paragraphs[i].remove();
+  }
+});
