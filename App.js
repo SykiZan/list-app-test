@@ -104,12 +104,12 @@ btnSortName.addEventListener("click", () => {
     .sort((a, b) => {
       if (
         a.textContent.substring(0, a.textContent.indexOf("=")) >
-        b.textContent.substring(0, a.textContent.indexOf("="))
+        b.textContent.substring(0, b.textContent.indexOf("="))
       )
         return 1;
       if (
         a.textContent.substring(0, a.textContent.indexOf("=")) <
-        b.textContent.substring(0, a.textContent.indexOf("="))
+        b.textContent.substring(0, b.textContent.indexOf("="))
       )
         return -1;
       return 0;
@@ -124,7 +124,11 @@ btnSortName.addEventListener("click", () => {
 // sort by value button
 btnSortValue.addEventListener("click", () => {
   listArr.sort(sortValue);
-
+  console.log(
+    list.children[0].textContent.substring(
+      list.children[0].textContent.indexOf("=") + 1
+    )
+  );
   //to sort html collection
   let lc = list.children;
   [].slice
@@ -132,12 +136,12 @@ btnSortValue.addEventListener("click", () => {
     .sort((a, b) => {
       if (
         a.textContent.substring(a.textContent.indexOf("=") + 1) >
-        b.textContent.substring(a.textContent.indexOf("=") + 1)
+        b.textContent.substring(b.textContent.indexOf("=") + 1)
       )
         return 1;
       if (
         a.textContent.substring(a.textContent.indexOf("=") + 1) <
-        b.textContent.substring(a.textContent.indexOf("=") + 1)
+        b.textContent.substring(b.textContent.indexOf("=") + 1)
       )
         return -1;
       return 0;
